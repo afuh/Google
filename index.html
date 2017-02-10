@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Buscar con Google</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link href="styles/style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="script.js" type="text/javascript"></script>
 </head>
 
 <!-- Heafer -->
+
 <body>
   <div class="header">
     <div class="gLeft">
@@ -19,7 +22,7 @@
       </div>
       <div class="search">
         <form>
-          <input id="searchBox" type="text" name="searchinput" value="Sigur Ros">
+          <input id="searchBox" type="text" name="searchinput" value="Pink Floyd">
         </form>
         <a href="#" title="Búsqueda por voz"><img id="micButton" src="images/mic-png" alt="search"></a>
         <a href="#" title="Buscar"><img id="magButton" src="images/mag.png" alt="search"></a>
@@ -29,7 +32,7 @@
       <a href="#" title="Aplicaciones"><img id="appButton" src="images/app.png" alt="search"></a>
       <button id="sessButton" name="button">Iniciar sesión</button>
     </div>
-    <div class="nav">
+    <div class="navBox">
       <ul>
         <li><a class="active" href="#">Todo</a></li>
         <li><a href="#">Imágenes</a></li>
@@ -42,18 +45,140 @@
       </ul>
     </div>
   </div>
-<!-- end Header -->
+  <!-- end Header -->
+
+  <!-- results -->
+  <div class="topBar">
+    <div>
+      <p>Aproximadamente 39.400.000 resultados (0,46 segundos)</p>
+    </div>
+  </div>
+
+  <div class="centerCol">
+    <div class="resultsContainer">
+      <ul id="resultados" class="list-group">
+        <li>
+          <a href="https://es.wikipedia.org/wiki/Pink_Floyd" target="_blank">Pink Floyd - Wikipedia, la enciclopedia libre</a>
+          <cite>https://es.wikipedia.org/wiki/<b>Pink_Floyd</b> <i class="fa fa-caret-down" aria-hidden="true"></i></cite>
+          <span>Pink Floyd fue una banda de rock británica, considerada un icono cultural del siglo xx y una de las bandas más influyentes en la historia de la música, que ...</span>
+          <div class="wikiLinks">
+            <a href="https://wikipedia.org/wiki/Syd_Barrett" target="_blank">Sid Barret</a>
+            <span> · </span>
+            <a href="https://wikipedia.org/wiki/Roger_Waters" target="_blank">Roger Waters</a>
+            <span> · </span>
+            <a href="https://wikipedia.org/wiki/Richard_Wright_(musician)" target="_blank">Richard Wright</a>
+            <span> · </span>
+            <a href="https://wikipedia.org/wiki/David_Gilmour" target="_blank">David Gilmour</a>
+          </div>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Pink_Floyd" target="_blank">Pink Floyd - Wikipedia</a>
+          <cite>https://en.wikipedia.org/wiki/<b>Pink_Floyd</b> <i class="fa fa-caret-down" aria-hidden="true"></i></cite>
+          <span><b>Pink Floyd</b> were an English rock band formed in London. They achieved international acclaim with their progressive and psychedelic music. Distinguished by ....</span>
+        </li>
+        <li>
+          <a href="http://www.pinkfloyd.com/" target="_blank">PINK FLOYD</a>
+          <cite>www.<b>pinkfloyd</b>.com/ <i class="fa fa-caret-down" aria-hidden="true"></i></cite>
+          <span>Features audio samples and evocative pictures related to the band's albums. [Requires Flash.]</span>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/OfficialPinkFloyd" target="_blank">Pink Floyd - YouTube</a>
+          <cite>https://www.youtube.com/user/Official<b>PinkFloyd</b> <i class="fa fa-caret-down" aria-hidden="true"></i></cite>
+          <span><b>Pink Floyd</b>, one of the most successful and influential groups ever, formed in the 1960s when Roger Waters, Nick Mason and Richard Wright were studying at col ..</span>
+        </li>
+        <li>
+          <a href="https://www.discogs.com/es/artist/45467-Pink-Floyd" target="_blank">Discografía de Pink Floyd en Discogs</a>
+          <cite>https://www.discogs.com/es/artist/45467-<b>Pink-Floyd</b> <i class="fa fa-caret-down" aria-hidden="true"></i></cite>
+          <span><b>Pink Floyd</b> was an English rock band from London. Founded in 1965, the group achieved worldwide acclaim, initially with innovative psychedelic music, and ...</span>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/pinkfloyd/" target="_blank">Pink Floyd | Facebook</a>
+          <cite>https://www.facebook.com/<b>pinkfloyd</b>/ <i class="fa fa-caret-down" aria-hidden="true"></i></cite>
+          <span><b>Pink Floyd</b>, 29413502 likes · 121133 talking about this. Please remember this page is open to fans of all ages and post responsibly.</span>
+        </li>
+        <li>
+          <a href="https://twitter.com/pinkfloyd?lang=es" target="_blank">Pink Floyd (@pinkfloyd) | Twitter</a>
+          <cite>https://twitter.com/<b>pinkfloyd</b>?lang=e <i class="fa fa-caret-down" aria-hidden="true"></i></cite>
+          <span>1168 tweets • 197 photos/videos • 1.96M followers. Check out the latest Tweets from Pink Floyd (@pinkfloyd).</span>
+        </li>
+        <li>
+          <a href="https://www.allmusic.com/artist/pink-floyd-mn0000346336" target="_blank">Pink Floyd | Biography, Albums, Streaming Links | AllMusic</a>
+          <cite>www.allmusic.com/artist/pink-floyd-mn0000346336 <i class="fa fa-caret-down" aria-hidden="true"></i></cite>
+          <span>Find <b>Pink Floyd</b> bio, music, credits, awards, & streaming links on AllMusic - One of the most predominant and celebrated rock…</span>
+        </li>
+        <li>
+          <a href="https://www.deezer.com/artist/860" target="_blank">Pink Floyd - Ecoute gratuite sur Deezer</a>
+          <cite>www.deezer.com/artist/860 <i class="fa fa-caret-down" aria-hidden="true"></i></cite>
+          <span><b>Pink Floyd</b> expérimente aussi dans les affaires avec le contrat Gini, qui fait scandale à l'époque. Un des symboles de la contre-culture hippie sponsorisé pour ...</span>
+        </li>
+        <li>
+          <a href="https://rateyourmusic.com/artist/pink-floyd" target="_blank">Pink Floyd Albums: songs, discography, biography, and listening ...</a>
+          <cite>https://rateyourmusic.com/artist/<b>pink-floyd</b> <i class="fa fa-caret-down" aria-hidden="true"></i></cite>
+          <span><b>Pink Floyd</b> discography and songs: Music profile for <b>Pink Floyd</b>, formed 1965. Genres: Progressive Rock, Art Rock, Psychedelic Rock. Albums include The Dark ...</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="medContainer">
+      <div class="ojo">
+        <h3>Búsquedas relacionadas con Pink Floyd</h3>
+      </div>
+      <div class="cardSection">
+        <div class="col">
+          <ul>
+            <li><a href="#">pink floyd <b>álbumes</b></a></li>
+            <li><a href="#">pink floyd <b>canciones</b></a></li>
+            <li><a href="#">pink floyd <b>youtube</b></a></li>
+            <li><a href="#">pink floyd <b>miembros</b></a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><a href="#">pink floyd <b>the wall</b></a></li>
+            <li><a href="#">pink floyd <b>the dark side of the moon</b></a></li>
+            <li><a href="#">pink floyd <b>wish you were here</b></a></li>
+            <li><a href="#">pink floyd <b>comfortably numb</b></a></li>
+          </ul>
+        </div>
+
+        <div class="navPages">
+          <table>
+            <tr>
+              <td><span class="g"></span></td>
+              <td><span class="o1"></span>1</td>
+              <td><a href="#"><span class="o"></span>2</a></td>
+              <td><a href="#"><span class="o"></span>3</a></td>
+              <td><a href="#"><span class="o"></span>4</a></td>
+              <td><a href="#"><span class="o"></span>5</a></td>
+              <td><a href="#"><span class="o"></span>6</a></td>
+              <td><a href="#"><span class="o"></span>7</a></td>
+              <td><a href="#"><span class="o"></span>8</a></td>
+              <td><a href="#"><span class="o"></span>9</a></td>
+              <td><a href="#"><span class="o"></span>10</a></td>
+              <td><a href="#"><span class="gle"></span>siguiente</a></td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </div>
 
 
 
 
 
+  </div>
+<!-- end results -->
 
-
-
-
-
-
+<!-- footer -->
+<div class="footer">
+  <div class="last">
+    <a href="#">Ayuda</a>
+    <a href="#">Danos tu opinón</a>
+    <a href="#">Privacidad</a>
+    <a href="#">Condiciones</a>
+  </div>
+</div>
 
 </body>
 </html>

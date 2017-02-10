@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+  list-style-type: none; }
 
 body {
   margin: 0;
@@ -31,7 +32,6 @@ body {
   .gLeft #searchBox {
     position: absolute;
     left: 150px;
-    bottom: 0px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: white;
     width: 632px;
@@ -84,30 +84,135 @@ body {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px; }
 
-.nav {
+.navBox {
   left: 110px;
   bottom: -19px;
   position: relative;
   min-width: 782px; }
+  .navBox ul {
+    overflow: hidden; }
+    .navBox ul li {
+      float: left; }
+      .navBox ul li a {
+        display: block;
+        color: #777;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none; }
+        .navBox ul li a:hover {
+          color: #111; }
+  .navBox .active {
+    border-bottom: 3px solid #4285f4;
+    color: #4285f4;
+    font-weight: bold; }
 
-ul {
-  list-style-type: none;
-  overflow: hidden; }
+.topBar {
+  position: relative;
+  width: 100%; }
+  .topBar div {
+    height: 43px;
+    margin-left: 165px; }
+    .topBar div p {
+      color: #808080; }
 
-li {
-  float: left; }
-  li a {
-    display: block;
-    color: #777;
+.centerCol {
+  margin-left: 165px;
+  width: 632px;
+  margin-right: 254px;
+  position: relative;
+  display: block;
+  clear: both; }
+
+.resultsContainer {
+  display: block;
+  position: relative;
+  font-weight: normal; }
+  .resultsContainer ul {
+    padding-left: 0;
+    margin: 0 auto; }
+    .resultsContainer ul li {
+      text-align: left;
+      margin-bottom: 25px; }
+      .resultsContainer ul li a {
+        text-decoration: none;
+        color: #1a0dab;
+        font-size: 18px;
+        cursor: pointer;
+        line-height: 1.2; }
+        .resultsContainer ul li a:hover {
+          text-decoration: underline; }
+      .resultsContainer ul li .wikiLinks a {
+        font-size: small; }
+      .resultsContainer ul li cite {
+        display: block;
+        font-size: 14px;
+        font-style: normal;
+        color: #006621;
+        line-height: 1.4; }
+      .resultsContainer ul li span {
+        color: #545454;
+        line-height: 1.4; }
+
+.ojo h3 {
+  display: block;
+  text-align: left;
+  color: #222;
+  height: auto;
+  padding-bottom: 8px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: normal; }
+
+.cardSection {
+  display: block; }
+
+.col {
+  font-size: 14px;
+  margin-top: -1px;
+  display: inline-block;
+  line-height: 25px; }
+  .col ul {
+    padding-left: 0;
+    padding-right: 23px;
+    margin-top: 0; }
+    .col ul a {
+      text-decoration: none;
+      color: #1a0dab; }
+      .col ul a:hover {
+        text-decoration: underline; }
+
+.navPages table {
+  margin: 20px 130px; }
+  .navPages table tr td {
+    vertical-align: top;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none; }
-    li a:hover {
-      color: #111; }
-
-.active {
-  border-bottom: 3px solid #4285f4;
-  color: #4285f4;
-  font-weight: bold; }
+    padding: 0; }
+    .navPages table tr td a {
+      text-align: center;
+      text-decoration: none;
+      color: #4285f4; }
+    .navPages table tr td span {
+      height: 40px;
+      display: block; }
+  .navPages table tr .g {
+    background: url("/images/nav_logo242_hr.png") no-repeat;
+    background-position: -24px 0;
+    background-size: 167px;
+    width: 28px; }
+  .navPages table tr .o1 {
+    background: url("/images/nav_logo242_hr.png") no-repeat;
+    background-position: -53px 0;
+    background-size: 167px;
+    width: 20px; }
+  .navPages table tr .o {
+    background: url("/images/nav_logo242_hr.png") no-repeat;
+    background-position: -74px 0;
+    background-size: 167px;
+    width: 20px; }
+  .navPages table tr .gle {
+    background: url("/images/nav_logo242_hr.png") no-repeat;
+    background-position: -96px 0;
+    background-size: 167px;
+    width: 72px; }
 
 
