@@ -1,0 +1,151 @@
+.infoBox
+  position: absolute
+  display: inline-block
+  vertical-align: top
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
+  +border-radius(2px)
+  width: 450px
+  .images
+    position: relative
+    height: 185px
+  .moreImages
+    position: absolute
+    right: 0
+    bottom: 4px
+    padding: 5px 8px 7px
+    background: rgba(0,0,0,0.4)
+    &:hover
+      background: black
+      transition: background 0.2s ease-in-out
+    a
+      color: #fff
+      font-size: 16px
+      text-shadow: 0 0 2px black, 0 0 3px black
+      letter-spacing: 1px
+      &:hover
+        text-decoration: underline
+
+.bandName
+  padding: 14px
+  border-bottom: 1px solid #ebebeb
+  .leftCol
+    display: inline-block
+    h1
+      font-family: arial,sans-serif-light,sans-serif
+      color: rgba(0,0,0,.87)
+      margin: 0
+      font-size: 30px
+      font-weight: normal
+    p
+      color: #777
+      margin: 6px auto
+  .rightCol
+    display: inline-block
+    float: right
+    margin-right: 20px
+    margin-top: 6px
+    a
+      color: rgba(black, .5)
+
+.bandInternet
+  padding-left: 18px
+  padding-right: 18px
+  .title
+    h3
+      color: rgba(0,0,0,.87)
+      font-size: 18px
+      font-weight: normal
+      margin-bottom: 0
+.places
+  ul
+    padding-left: 0
+    &:first-child
+
+    li
+      height: 40px
+      padding-top: 10px
+      align-items: baseline
+      &:first-child
+        border-top: 1px solid #EBEBEB
+      &:not(:last-child)
+        border-bottom: 1px solid #f5f5f5
+      &:hover:not(:last-child)
+        text-decoration: underline
+      a
+        display: flex
+        align-items: center
+        color: rgba(0, 0, 0, 0.87)
+
+.Wiki
+  a
+    color: #1a0dab
+    &:hover
+      text-decoration: underline
+
+.songs
+  padding-top: 4px
+  .title
+    h3
+      margin: 12px 0 12px
+    a
+      color: #222
+      &:hover
+        text-decoration: underline
+  .songsList
+    padding-left: 0
+    .albumBlocks
+      cursor: pointer
+      border-bottom: 1px solid #f5f5f5
+      .leftCol
+        display: inline-block
+        p
+          margin: 9px 0 8px 0
+        .song
+          color: #222
+          font-size: 14px
+          &:hover
+            text-decoration: underline
+        .album
+          color: #757575
+          font-size: 13px
+      .rightCol
+        display: inline
+        float: right
+        height: 56px
+    .lastCol
+      a
+        color: #777
+        font-size: 13px
+
+
+.albums
+  .title
+    h3
+      margin-top: 30px
+  th
+    width: 76px
+  tr
+    td
+      text-align: left
+      vertical-align: top
+      a
+        color: #1a0dab
+        line-height: 1.1
+        &:hover
+          text-decoration: none
+      p
+        color: #777
+        margin: 2px auto
+
+.lastLine
+  padding-left: 18px
+  border-top: 1px solid #ebebeb
+  display: block
+  .dropDown
+    vertical-align: middle
+    display: inline-block
+  .moreInfo
+    margin-left: 16px
+    color: #777
+    font-size: 16px
+    display: inline-block
