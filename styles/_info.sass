@@ -59,8 +59,6 @@
 .places
   ul
     padding-left: 0
-    &:first-child
-
     li
       height: 40px
       padding-top: 10px
@@ -93,11 +91,12 @@
         text-decoration: underline
   .songsList
     padding-left: 0
-    .albumBlocks
-      cursor: pointer
+    .songsBlocks
+      position: relative
       border-bottom: 1px solid #f5f5f5
       .leftCol
         display: inline-block
+        width: 100%
         p
           margin: 9px 0 8px 0
         .song
@@ -109,9 +108,9 @@
           color: #757575
           font-size: 13px
       .rightCol
-        display: inline
-        float: right
-        height: 56px
+        position: absolute
+        top: 0
+        right: 0
     .lastCol
       a
         color: #777
