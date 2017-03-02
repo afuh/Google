@@ -1,10 +1,9 @@
 .infoBox
-  position: absolute
-  display: inline-block
-  vertical-align: top
+  background: pink
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
   +border-radius(2px)
   width: 450px
+  min-width: 450px
   .images
     position: relative
     height: 185px
@@ -31,11 +30,12 @@
   .leftCol
     display: inline-block
     h1
-      font-family: arial,sans-serif-light,sans-serif
       color: rgba(0,0,0,.87)
       margin: 0
-      font-size: 30px
-      font-weight: normal
+      font:
+        family: arial,sans-serif-light,sans-serif
+        size: 30px
+        weight: normal
     p
       color: #777
       margin: 6px auto

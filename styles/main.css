@@ -13,6 +13,7 @@ body {
 
 .header {
   position: relative;
+  background: green;
   background: #fafafa;
   border-bottom: 1px solid #ebebeb;
   height: 123px;
@@ -106,6 +107,10 @@ body {
     color: #4285f4;
     font-weight: bold; }
 
+.mainSection {
+  display: flex;
+  flex-flow: row; }
+
 .topBar {
   position: relative;
   width: 100%; }
@@ -117,14 +122,11 @@ body {
 
 .centerCol {
   margin-left: 165px;
-  width: 620px;
   margin-right: 50px;
-  position: relative;
-  display: inline-block; }
+  width: 620px;
+  min-width: 310px; }
 
 .resultsContainer {
-  display: block;
-  position: relative;
   font-weight: normal; }
   .resultsContainer ul {
     padding-left: 0;
@@ -152,17 +154,12 @@ body {
         line-height: 1.4; }
 
 .related h3 {
-  display: block;
-  text-align: left;
   color: #222;
   height: auto;
   padding-bottom: 8px;
   font-size: 18px;
   line-height: 18px;
   font-weight: normal; }
-
-.cardSection {
-  display: block; }
 
 .col {
   font-size: 14px;
@@ -245,15 +242,14 @@ body {
   background: #9e9e9e; }
 
 .infoBox {
-  position: absolute;
-  display: inline-block;
-  vertical-align: top;
+  background: pink;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
-  width: 450px; }
+  width: 450px;
+  min-width: 450px; }
   .infoBox .images {
     position: relative;
     height: 185px; }
@@ -280,9 +276,9 @@ body {
   .bandName .leftCol {
     display: inline-block; }
     .bandName .leftCol h1 {
-      font-family: arial, sans-serif-light, sans-serif;
       color: rgba(0, 0, 0, 0.87);
       margin: 0;
+      font-family: arial,sans-serif-light,sans-serif;
       font-size: 30px;
       font-weight: normal; }
     .bandName .leftCol p {
@@ -363,8 +359,10 @@ body {
 
 .albums .title h3 {
   margin-top: 30px; }
+
 .albums th {
   width: 76px; }
+
 .albums tr td {
   text-align: left;
   vertical-align: top; }
@@ -389,5 +387,3 @@ body {
     color: #777;
     font-size: 16px;
     display: inline-block; }
-
-/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,7 @@
+.mainSection
+  display: flex
+  flex-flow: row
+
 .topBar
   position: relative
   width: 100%
@@ -8,15 +12,13 @@
       color: #808080
 
 .centerCol
-  margin-left: 165px
+  margin:
+    left: 165px
+    right: 50px
   width: 620px
-  margin-right: 50px
-  position: relative
-  display: inline-block
+  min-width: 310px
 
 .resultsContainer
-  display: block
-  position: relative
   font-weight: normal
   ul
     padding-left: 0
@@ -46,8 +48,6 @@
 
 .related
   h3
-    display: block
-    text-align: left
     color: #222
     height: auto
     padding-bottom: 8px
@@ -55,8 +55,6 @@
     line-height: 18px
     font-weight: normal
 
-.cardSection
-  display: block
 .col
   font-size: 14px
   margin-top: -1px
