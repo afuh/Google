@@ -4,36 +4,37 @@
 <head>
   <title>Pink Floyd - Buscar con Google</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link rel="shortcut icon" href="https://www.google.com/images/branding/product/ico/googleg_lodp.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="styles/main.css" type="text/css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 </head>
 
 <body>
 
   <!-- Header -->
   <div class="header">
-    <div class="gLeft">
-      <div class="logo">
-        <a href="http://google.com" title="Ir a Google"><img id="logo" src="images/googlelogo_color_120x44dp.png" alt="google"></a>
+    <div class="search row">
+      <div class="g-left row">
+        <div class="logo">
+          <img src="images/googlelogo_color_120x44dp.png" alt="google-logo">
+        </div>
+        <div class="search">
+          <input type="text" name="searchinput" value="Pink Floyd">
+          <a href="#" title="Búsqueda por voz"><img src="images/mic-png" alt="voice"></a>
+          <a href="#" title="Buscar"><img src="images/mag.png" alt="search"></a>
+        </div>
       </div>
-      <div class="search">
-        <form>
-          <input id="searchBox" type="text" name="searchinput" value="Pink Floyd">
-        </form>
-        <a href="#" title="Búsqueda por voz"><img id="micButton" src="images/mic-png" alt="search"></a>
-        <a href="#" title="Buscar"><img id="magButton" src="images/mag.png" alt="search"></a>
+      <div class="g-right row">
+        <a href="#" title="Aplicaciones"><img src="images/app.png" alt="sesion"></a>
+        <button name="button">Iniciar sesión</button>
       </div>
     </div>
-    <div class="gRight">
-      <a href="#" title="Aplicaciones"><img id="appButton" src="images/app.png" alt="search"></a>
-      <button id="sessButton" name="button">Iniciar sesión</button>
-    </div>
-    <div class="navBox">
+    <div class="nav-box">
       <ul>
-        <li><a class="active" href="#">Todo</a></li>
+        <li><a href="#">Todo</a></li>
         <li><a href="#">Imágenes</a></li>
         <li><a href="#">Videos</a></li>
         <li><a href="#">Noticias</a></li>

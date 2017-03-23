@@ -5,7 +5,7 @@
 *.DS_Store
 .AppleDouble
 .LSOverride
-gulp
+
 
 # Icon must end with two \r
 Icon
@@ -33,3 +33,5 @@ Temporary Items
 ### Sass ###
 .sass-cache/
 *.css.map
+
+node_modules
