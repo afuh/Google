@@ -42,7 +42,7 @@ body {
   .g-left img[alt="google-logo"] {
     cursor: pointer;
     width: 120px;
-    margin: 0 15px; }
+    margin: 5px 14px 0; }
   .g-left input[name="searchinput"] {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: white;
@@ -397,7 +397,7 @@ body {
       float: left;
       padding: 14px 16px; }
 
-.locationCircle {
+.location-circle {
   border-radius: 100%;
   display: inline-block;
   height: 10px;
