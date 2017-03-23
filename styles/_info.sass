@@ -1,13 +1,19 @@
-.infoBox
+@media screen and (max-width: 1160px)
+  .info-box
+    display: none
+
+.info-box
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
   border-radius: 2px
   width: 450px
-  min-width: 450px
+  min-width: 420px
   height: 1200px
   .images
     position: relative
-    height: 185px
-  .moreImages
+    img
+      width: 100%
+      height: auto
+  .more-images-link
     position: absolute
     right: 0
     bottom: 4px
@@ -24,10 +30,10 @@
       &:hover
         text-decoration: underline
 
-.bandName
+.band-name
   padding: 14px
   border-bottom: 1px solid #ebebeb
-  .leftCol
+  .left-col
     display: inline-block
     h1
       color: rgba(0,0,0,.87)
@@ -39,8 +45,7 @@
     p
       color: #777
       margin: 6px auto
-  .rightCol
-    display: inline-block
+  .right-col
     float: right
     margin:
       right: 20px
@@ -48,7 +53,7 @@
     a
       color: rgba(black, .5)
 
-.bandInternet
+.band-internet
   padding:
     left: 18px
     right: 18px
@@ -92,32 +97,30 @@
       color: #222
       &:hover
         text-decoration: underline
-  .songsList
-    padding-left: 0
-    .songsBlocks
-      position: relative
-      border-bottom: 1px solid #f5f5f5
-      .leftCol
-        display: inline-block
-        width: 100%
-        p
-          margin: 9px 0 8px 0
+
+.songs-list
+  padding-left: 0
+  .songs-cont
+    border-bottom: 1px solid #f5f5f5
+    .row
+      justify-content: space-between
+      align-items: center
+      text-decoration: none
+      &:hover
         .song
-          color: #222
-          font-size: 14px
-          &:hover
-            text-decoration: underline
-        .album
-          color: #757575
-          font-size: 13px
-      .rightCol
-        position: absolute
-        top: 0
-        right: 0
-    .lastCol
-      a
-        color: #777
+          text-decoration: underline
+      p
+        margin: 9px 0 8px 0
+      .song
+        color: #222
+        font-size: 14px
+      .album
+        color: #757575
         font-size: 13px
+  .last-col
+    a
+      color: #777
+      font-size: 13px
 
 .albums
   .title
@@ -138,14 +141,14 @@
         color: #777
         margin: 2px auto
 
-.lastLine
+.last-line
   padding-left: 18px
   border-top: 1px solid #ebebeb
   display: block
-  .dropDown
+  .drop-down-icon
     vertical-align: middle
     display: inline-block
-  .moreInfo
+  .more-info
     margin-left: 16px
     color: #777
     font-size: 16px

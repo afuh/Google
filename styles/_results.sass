@@ -1,24 +1,23 @@
-.mainSection
-  display: flex
-  flex-flow: row
-
-.topBar
-  position: relative
-  width: 100%
+.top-bar
   div
     height: 43px
-    margin-left: 165px
     p
       color: #808080
+      white-space: nowrap
 
-.centerCol
-  margin:
-    left: 165px
-    right: 50px
-  width: 620px
-  min-width: 600px
+.center-section
+  margin-left: 165px
+  max-width: 1120px
 
-.resultsContainer
+.main
+  justify-content: space-between
+
+.center-col
+  flex-basis: 60%
+  min-width: 550px
+  padding-right: 20px
+
+.results-container
   font-weight: normal
   ul
     padding-left: 0
@@ -57,7 +56,7 @@
       size: 18px
       weight: normal
 
-.col
+.more-search-list > div
   font-size: 14px
   margin-top: -1px
   display: inline-block
@@ -73,7 +72,7 @@
       &:hover
         text-decoration: underline
 
-.navPages
+.nav-pages
   table
     margin: 20px 130px
     tr
